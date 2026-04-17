@@ -1,0 +1,6 @@
+ultralytics
+pillow
+opencv-python-headless
+numpy
+torch
+torchvision
