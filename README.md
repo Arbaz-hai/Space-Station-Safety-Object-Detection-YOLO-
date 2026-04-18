@@ -164,8 +164,8 @@ space-station-safety-detection/
 ### 1. Clone the repository
 
 ```bash
-git clone https://huggingface.co/spaces/<your-username>/space-station-safety-detection
-cd space-station-safety-detection
+git clone https://huggingface.co/spaces/ArbazDevHive/Space_Station_Safety_Object_Detection
+cd Space_Station_Safety_Object_Detection
 ```
 
 ### 2. Create a virtual environment
@@ -212,7 +212,7 @@ Open `http://localhost:7860` in your browser.
 
 ### Option A — Direct Upload (recommended for large model files)
 
-1. Go to [huggingface.co/new-space](https://huggingface.co/new-space)
+1. Go to [huggingface.co/new-space](https://huggingface.co/spaces/ArbazDevHive/Space_Station_Safety_Object_Detection)
 2. Choose **Gradio** as the SDK
 3. Upload all files via the web UI:
    - `app.py`
