@@ -60,8 +60,8 @@ Data was generated using **Falcon**, Duality AI's photorealistic digital twin si
 |--------|-------|
 | **mAP@0.5** | **82.14%** |
 | mAP@0.5:0.95 | 63.73% |
-| Precision | 91.42% |
-| Recall | 75.95% |
+| Precision | 95.1% |
+| Recall | 81.4% |
 | F1 Score | 82.9% |
 | Inference Speed (GPU, 480 px) | ~180 ms |
 | Inference Speed (CPU, 480 px) | ~900 ms |
