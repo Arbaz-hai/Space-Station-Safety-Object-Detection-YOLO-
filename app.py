@@ -9,14 +9,11 @@ from utils import (
     load_model, run_inference, build_detection_summary,
 )
 
-# ── Load model once at startup ────────────────────────────────────────────────
 _MODEL, _MODEL_ERROR = load_model()
 
-# ── Results save directory ────────────────────────────────────────────────────
 SAVE_DIR = "saved_results"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
-# ── Custom CSS ────────────────────────────────────────────────────────────────
 CUSTOM_CSS = """
 /* ═══════════════════════════════════════════════════════════════
    GLOBAL RESET & BASE
@@ -1116,11 +1113,9 @@ with gr.Blocks(title="Space Station Safety Detection", css=CUSTOM_CSS, theme=the
 </div>
 """)
 
-    # ── Footer ──────────────────────────────────────────────────────────────
     gr.HTML(make_footer_html())
 
 
-# ── Launch ────────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     demo.launch(
         server_name="0.0.0.0",
