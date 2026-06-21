@@ -1,8 +1,3 @@
-"""
-app.py — Space Station Safety Object Detection
-Hugging Face Spaces · Gradio · YOLOv8 · Duality AI Hackathon
-"""
-
 import gradio as gr
 from PIL import Image
 import traceback
