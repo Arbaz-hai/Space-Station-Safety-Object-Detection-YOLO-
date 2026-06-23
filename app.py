@@ -1084,9 +1084,7 @@ with gr.Blocks(title="Space Station Safety Detection", css=CUSTOM_CSS, theme=the
         with gr.TabItem("  Model Info"):
             gr.HTML(make_model_info_html())
 
-        # ══════════════════════════════════════════════════════════════════
-        # TAB 5 — How It Works
-        # ══════════════════════════════════════════════════════════════════
+        
         with gr.TabItem("  How It Works"):
             gr.HTML(make_how_it_works_html())
             gr.HTML("""
