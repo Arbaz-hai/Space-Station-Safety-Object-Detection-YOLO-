@@ -1,6 +1,5 @@
 ---
 title: Space Station Safety Objects Detection
-emoji: 🛸
 sdk: gradio
 python_version: 3.12.12
 app_file: app.py
