@@ -19,7 +19,7 @@ sdk_version: 6.12.0
 ## Space Station
 ![Space Station](https://github.com/Arbaz-hai/Space-Station-Safety-Object-Detection-YOLO-/blob/af41bd49c401ca261b22200b240f237c34c141cf/Space%20Station.png)
 
-# 🛸 Space Station Safety Object Detection
+#  Space Station Safety Object Detection
 
 > **Duality AI Hackathon 2026 · Gurugram**
 > Real-time detection of 7 critical safety objects in space station environments using YOLOv8m trained on synthetic digital twin data — with live webcam inference at **≤ 2 second latency**.
