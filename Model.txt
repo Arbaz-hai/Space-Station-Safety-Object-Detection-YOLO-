@@ -1,2 +1,2 @@
-## Download Model (Large File)
+## Download Model
 [Download best.pt from Google Drive](https://drive.google.com/file/d/1fHH10ney4eTiE1t-JpzuS17kkfpaPtmL/view?usp=drive_link)
