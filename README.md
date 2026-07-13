@@ -21,7 +21,7 @@ sdk_version: 6.12.0
 
 #  Space Station Safety Object Detection
 
-> **Duality AI Hackathon 2026 · Gurugram**
+> **Duality AI Hackathon 2026 **
 > Real-time detection of 7 critical safety objects in space station environments using YOLOv8m trained on synthetic digital twin data — with live webcam inference at **≤ 2 second latency**.
 
 ---
