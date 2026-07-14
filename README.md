@@ -79,7 +79,7 @@ Data was generated using **Falcon**, Duality AI's photorealistic digital twin si
 
 ---
 
-## ⚡ Real-Time Latency
+## Real-Time Latency
 
 This app is optimised for live webcam detection at **≤ 2 seconds end-to-end latency**.
 
