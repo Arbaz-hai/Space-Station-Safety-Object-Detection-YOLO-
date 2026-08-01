@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-deploy_check.py
-Run before deploying to Hugging Face Spaces to validate the project.
-"""
-
 import sys
 import os
 from pathlib import Path
