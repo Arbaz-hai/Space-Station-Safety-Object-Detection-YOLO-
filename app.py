@@ -15,9 +15,6 @@ SAVE_DIR = "saved_results"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 CUSTOM_CSS = """
-/* ═══════════════════════════════════════════════════════════════
-   GLOBAL RESET & BASE
-═══════════════════════════════════════════════════════════════ */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Exo+2:wght@300;400;500;600&display=swap');
 :root {
   --bg-deep:      #020818;
@@ -46,7 +43,6 @@ body, .gradio-container {
   font-family: var(--font-body) !important;
   min-height: 100vh;
 }
-/* Starfield background */
 .gradio-container::before {
   content: '';
   position: fixed;
@@ -58,9 +54,6 @@ body, .gradio-container {
   pointer-events: none;
   z-index: 0;
 }
-/* ═══════════════════════════════════════════════════════════════
-   HEADER BANNER
-═══════════════════════════════════════════════════════════════ */
 #header-banner {
   background: linear-gradient(135deg,
     rgba(0,10,30,0.98) 0%,
@@ -163,9 +156,6 @@ body, .gradio-container {
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
-/* ═══════════════════════════════════════════════════════════════
-   GLASS CARD
-═══════════════════════════════════════════════════════════════ */
 .glass-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -203,9 +193,6 @@ body, .gradio-container {
   border-radius: 2px;
   box-shadow: 0 0 8px var(--cyan);
 }
-/* ═══════════════════════════════════════════════════════════════
-   INPUT & OUTPUT PANELS
-═══════════════════════════════════════════════════════════════ */
 .upload-zone label,
 .gradio-image label {
   font-family: var(--font-head) !important;
@@ -223,9 +210,6 @@ body, .gradio-container {
 .gradio-image:hover {
   border-color: var(--border-glow) !important;
 }
-/* ═══════════════════════════════════════════════════════════════
-   SLIDERS / CONTROLS
-═══════════════════════════════════════════════════════════════ */
 input[type=range] { accent-color: var(--cyan) !important; }
 .gradio-slider label,
 .gradio-number label {
@@ -233,9 +217,6 @@ input[type=range] { accent-color: var(--cyan) !important; }
   font-size: 0.82rem !important;
   color: var(--text-primary) !important;
 }
-/* ═══════════════════════════════════════════════════════════════
-   BUTTONS
-═══════════════════════════════════════════════════════════════ */
 #detect-btn {
   background: linear-gradient(135deg, #0080cc, #6020cc) !important;
   border: 1px solid var(--cyan) !important;
@@ -294,7 +275,6 @@ input[type=range] { accent-color: var(--cyan) !important; }
   box-shadow: 0 0 28px rgba(16,185,129,0.45) !important;
   transform: translateY(-1px) !important;
 }
-/* Live indicator pulse */
 @keyframes livepulse {
   0%, 100% { opacity: 1; }
   50%       { opacity: 0.3; }
@@ -308,9 +288,6 @@ input[type=range] { accent-color: var(--cyan) !important; }
   animation: livepulse 1s infinite;
   vertical-align: middle;
 }
-/* ═══════════════════════════════════════════════════════════════
-   DETECTION SUMMARY HTML OUTPUT
-═══════════════════════════════════════════════════════════════ */
 .summary-header {
   display: flex;
   gap: 16px;
@@ -405,9 +382,6 @@ input[type=range] { accent-color: var(--cyan) !important; }
   margin-bottom: 6px;
 }
 .no-det-sub { font-size: 0.78rem; }
-/* ═══════════════════════════════════════════════════════════════
-   SAVE STATUS
-═══════════════════════════════════════════════════════════════ */
 .save-success {
   background: rgba(16,185,129,0.1);
   border: 1px solid rgba(16,185,129,0.35);
@@ -428,9 +402,6 @@ input[type=range] { accent-color: var(--cyan) !important; }
   font-size: 0.82rem;
   margin-top: 10px;
 }
-/* ═══════════════════════════════════════════════════════════════
-   MODEL INFO PANEL
-═══════════════════════════════════════════════════════════════ */
 .model-info-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -474,9 +445,6 @@ input[type=range] { accent-color: var(--cyan) !important; }
   gap: 6px;
   letter-spacing: 0.04em;
 }
-/* ═══════════════════════════════════════════════════════════════
-   HOW IT WORKS
-═══════════════════════════════════════════════════════════════ */
 .how-steps { display: flex; gap: 12px; flex-wrap: wrap; }
 .how-step {
   flex: 1;
@@ -511,9 +479,6 @@ input[type=range] { accent-color: var(--cyan) !important; }
   display: block;
 }
 .step-desc { font-size: 0.72rem; color: var(--text-muted); line-height: 1.4; }
-/* ═══════════════════════════════════════════════════════════════
-   PERFORMANCE METRICS
-═══════════════════════════════════════════════════════════════ */
 .metrics-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -543,9 +508,6 @@ input[type=range] { accent-color: var(--cyan) !important; }
   letter-spacing: 0.1em;
   margin-top: 4px;
 }
-/* ═══════════════════════════════════════════════════════════════
-   FOOTER
-═══════════════════════════════════════════════════════════════ */
 #footer {
   border-top: 1px solid var(--border);
   padding: 24px 0;
@@ -573,9 +535,6 @@ input[type=range] { accent-color: var(--cyan) !important; }
 .fbadge-cyan   { background: rgba(0,212,255,0.1);   border: 1px solid rgba(0,212,255,0.3);   color: var(--cyan);   }
 .fbadge-purple { background: rgba(168,85,247,0.1);  border: 1px solid rgba(168,85,247,0.3);  color: var(--purple); }
 .fbadge-green  { background: rgba(16,185,129,0.1);  border: 1px solid rgba(16,185,129,0.3);  color: var(--green);  }
-/* ═══════════════════════════════════════════════════════════════
-   ERROR / WARNING
-═══════════════════════════════════════════════════════════════ */
 .model-error {
   background: rgba(239,68,68,0.1);
   border: 1px solid rgba(239,68,68,0.35);
@@ -585,9 +544,6 @@ input[type=range] { accent-color: var(--cyan) !important; }
   font-size: 0.82rem;
   line-height: 1.5;
 }
-/* ═══════════════════════════════════════════════════════════════
-   GRADIO OVERRIDES
-═══════════════════════════════════════════════════════════════ */
 .gradio-container .prose { color: var(--text-primary) !important; }
 .gradio-container .tab-nav { border-bottom: 1px solid var(--border) !important; }
 .gradio-container .tab-nav button {
@@ -605,7 +561,6 @@ footer { display: none !important; }
 """
 
 
-# ── HTML Components ───────────────────────────────────────────────────────────
 def make_header_html() -> str:
     return """
 <div id="header-banner">
@@ -742,9 +697,7 @@ def make_footer_html() -> str:
 """
 
 
-# ── Shared detection logic ────────────────────────────────────────────────────
 def _run_detection(image: Image.Image, conf_threshold: float, iou_threshold: float):
-    """Core detection — returns (annotated_image, summary_html, detections, inf_ms)."""
     if image is None:
         return None, '<div class="no-detection-card"><div class="no-det-icon">📷</div><div class="no-det-text">Please provide an image first.</div></div>', [], 0
 
@@ -762,15 +715,12 @@ def _run_detection(image: Image.Image, conf_threshold: float, iou_threshold: flo
         return image, error_html, [], 0
 
 
-# ── Inference Functions ───────────────────────────────────────────────────────
 def detect_objects(image: Image.Image, conf_threshold: float, iou_threshold: float):
-    """Upload tab handler."""
     annotated, summary_html, _, _ = _run_detection(image, conf_threshold, iou_threshold)
     return annotated, summary_html
 
 
 def detect_from_webcam(webcam_image: Image.Image, conf_threshold: float, iou_threshold: float):
-    """Webcam tab handler — runs on each captured frame."""
     if webcam_image is None:
         return (
             None,
@@ -782,7 +732,6 @@ def detect_from_webcam(webcam_image: Image.Image, conf_threshold: float, iou_thr
 
 
 def live_predict(webcam_stream_image: Image.Image, conf_threshold: float, iou_threshold: float):
-    """Live streaming handler — called on every frame from gr.Image(streaming=True)."""
     if webcam_stream_image is None:
         return None
     try:
@@ -794,7 +743,6 @@ def live_predict(webcam_stream_image: Image.Image, conf_threshold: float, iou_th
 
 
 def save_result(annotated_image: Image.Image, summary_html: str):
-    """Save the annotated image and a companion metadata text file."""
     if annotated_image is None:
         return '<div class="save-error"> No result to save. Run detection first.</div>'
 
@@ -808,7 +756,6 @@ def save_result(annotated_image: Image.Image, summary_html: str):
         with open(meta_path, "w") as f:
             f.write(f"Timestamp : {ts}\n")
             f.write(f"Image path: {img_path}\n\n")
-            # Strip HTML tags for plain-text metadata
             import re
             plain = re.sub(r"<[^>]+>", " ", summary_html)
             plain = re.sub(r"\s+", " ", plain).strip()
@@ -822,7 +769,6 @@ def save_result(annotated_image: Image.Image, summary_html: str):
         return f'<div class="save-error"> Save failed: {e}</div>'
 
 
-# ── Example images ────────────────────────────────────────────────────────────
 EXAMPLE_IMAGES = []
 for p in ["examples/sample1.jpg", "examples/sample2.jpg", "examples/sample3.jpg"]:
     from pathlib import Path
@@ -830,7 +776,6 @@ for p in ["examples/sample1.jpg", "examples/sample2.jpg", "examples/sample3.jpg"
         EXAMPLE_IMAGES.append([p, 0.25, 0.45])
 
 
-# ── Build Gradio UI ───────────────────────────────────────────────────────────
 theme = gr.themes.Base(
     primary_hue="cyan",
     neutral_hue="slate",
@@ -853,22 +798,16 @@ _WEBCAM_EMPTY = """
 
 with gr.Blocks(title="Space Station Safety Detection", css=CUSTOM_CSS, theme=theme) as demo:
 
-    # ── Header ─────────────────────────────────────────────────────────────
     gr.HTML(make_header_html())
 
-    # Shared state for save functionality
     last_annotated = gr.State(None)
     last_summary   = gr.State(_EMPTY_SUMMARY)
 
     with gr.Tabs():
 
-        # ══════════════════════════════════════════════════════════════════
-        # TAB 1 — Upload & Detection
-        # ══════════════════════════════════════════════════════════════════
         with gr.TabItem("  Detection Console"):
             with gr.Row(equal_height=False):
 
-                # Left — inputs
                 with gr.Column(scale=4):
                     gr.HTML('<div class="glass-card" style="padding-bottom:8px">'
                             '<div class="section-title">Input Image</div>')
@@ -910,7 +849,6 @@ with gr.Blocks(title="Space Station Safety Detection", css=CUSTOM_CSS, theme=the
                             label="Sample Images",
                         )
 
-                # Right — outputs
                 with gr.Column(scale=5):
                     gr.HTML('<div class="glass-card" style="padding-bottom:8px">'
                             '<div class="section-title">Detection Output</div>')
@@ -921,7 +859,6 @@ with gr.Blocks(title="Space Station Safety Detection", css=CUSTOM_CSS, theme=the
                     summary_upload = gr.HTML(value=_EMPTY_SUMMARY)
                     gr.HTML('</div>')
 
-            # Wire upload tab
             detect_btn.click(
                 fn=detect_objects,
                 inputs=[input_image, conf_slider, iou_slider],
@@ -944,9 +881,6 @@ with gr.Blocks(title="Space Station Safety Detection", css=CUSTOM_CSS, theme=the
                 outputs=[save_status_upload],
             )
 
-        # ══════════════════════════════════════════════════════════════════
-        # TAB 2 — Webcam Capture
-        # ══════════════════════════════════════════════════════════════════
         with gr.TabItem("  Webcam Capture"):
             gr.HTML("""
 <div class="glass-card" style="padding:14px 20px;margin-bottom:16px">
@@ -1013,9 +947,6 @@ with gr.Blocks(title="Space Station Safety Detection", css=CUSTOM_CSS, theme=the
                 outputs=[wc_save_status],
             )
 
-        # ══════════════════════════════════════════════════════════════════
-        # TAB 3 — Live Webcam Stream
-        # ══════════════════════════════════════════════════════════════════
         with gr.TabItem("🔴  Live Detection"):
             gr.HTML("""
 <div class="glass-card" style="padding:14px 20px;margin-bottom:16px">
@@ -1062,29 +993,23 @@ with gr.Blocks(title="Space Station Safety Detection", css=CUSTOM_CSS, theme=the
                     live_output = gr.Image(type="pil", label="", height=480, interactive=False)
                     gr.HTML('</div>')
 
-            # Streaming inference — fires on each frame
             live_input.stream(
                 fn=live_predict,
                 inputs=[live_input, live_conf, live_iou],
                 outputs=[live_output],
                 time_limit=120,
-                stream_every=0.1,   # ~10 FPS
+                stream_every=0.1,
             )
 
-            # Save current live frame
             live_save_btn.click(
                 fn=save_result,
                 inputs=[live_output, gr.State("Live detection frame")],
                 outputs=[live_save_status],
             )
 
-        # ══════════════════════════════════════════════════════════════════
-        # TAB 4 — Model Info
-        # ══════════════════════════════════════════════════════════════════
         with gr.TabItem("  Model Info"):
             gr.HTML(make_model_info_html())
 
-        
         with gr.TabItem("  How It Works"):
             gr.HTML(make_how_it_works_html())
             gr.HTML("""
